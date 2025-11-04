@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE_TITLE - HivePro Documentation</title>
+    <!-- 
+        UPDATE THE PATH BASED ON YOUR FILE LOCATION:
+        - From docs/section/: use ../../styles.css
+        - From docs/section/subsection/: use ../../../styles.css
+    -->
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header class="header">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+            <!-- UPDATE HREF: use ../../index.html or ../../../index.html based on depth -->
+            <a href="../../index.html" class="logo"><span>Hive</span>Pro</a>
+        </div>
+        <nav class="header-nav">
+            <a href="../../index.html">Docs</a>
+            <a href="../api-reference/overview.html">API</a>
+            <a href="#community">Community</a>
+            <a href="#github">GitHub</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <!-- COPY THE SIDEBAR FROM index.html AND UPDATE THE 'active' CLASS -->
+            <div class="sidebar-section">
+                <div class="sidebar-title">Getting Started</div>
+                <ul class="sidebar-items">
+                    <li class="sidebar-item"><a href="../../index.html">Introduction</a></li>
+                    <li class="sidebar-item"><a href="../getting-started/installation.html">Installation</a></li>
+                    <li class="sidebar-item"><a href="../getting-started/quickstart.html">Quick Start</a></li>
+                    <li class="sidebar-item"><a href="../getting-started/configuration.html">Configuration</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Core Concepts</div>
+                <ul class="sidebar-items">
+                    <li class="sidebar-item"><a href="../core-concepts/architecture.html">Architecture</a></li>
+                    <li class="sidebar-item"><a href="../core-concepts/features.html">Features</a></li>
+                    <li class="sidebar-item"><a href="../core-concepts/security.html">Security</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Guides</div>
+                <ul class="sidebar-items">
+                    <li class="sidebar-item"><a href="../guides/basic-usage.html">Basic Usage</a></li>
+                    <li class="sidebar-item"><a href="../guides/advanced.html">Advanced Topics</a></li>
+                    <li class="sidebar-item"><a href="../guides/customization.html">Customization</a></li>
+                    <li class="sidebar-item">
+                        <a href="../guides/integrations.html">Integrations</a>
+                        <ul class="sidebar-items sidebar-subsection">
+                            <li class="sidebar-item"><a href="../guides/extensions/creating-extensions.html">Creating Extensions</a></li>
+                            <li class="sidebar-item"><a href="../guides/extensions/publishing.html">Publishing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">API Reference</div>
+                <ul class="sidebar-items">
+                    <li class="sidebar-item"><a href="../api-reference/overview.html">Overview</a></li>
+                    <li class="sidebar-item"><a href="../api-reference/endpoints.html">Endpoints</a></li>
+                    <li class="sidebar-item"><a href="../api-reference/authentication.html">Authentication</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Resources</div>
+                <ul class="sidebar-items">
+                    <li class="sidebar-item"><a href="../resources/troubleshooting.html">Troubleshooting</a></li>
+                    <li class="sidebar-item"><a href="../resources/faq.html">FAQ</a></li>
+                    <li class="sidebar-item"><a href="../resources/changelog.html">Changelog</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- YOUR CONTENT STARTS HERE -->
+                <h1>Page Title</h1>
+                <p>Introduction paragraph describing this page.</p>
+
+                <h2>Section Heading</h2>
+                <p>Content for this section.</p>
+
+                <h3>Subsection</h3>
+                <p>More detailed content.</p>
+
+                <!-- Code Example -->
+                <pre><code># Example command
+hivepro command --option value</code></pre>
+
+                <!-- Info Alert -->
+                <div class="alert alert-info">
+                    <strong>Note:</strong> Important information for users.
+                </div>
+
+                <!-- Warning Alert -->
+                <div class="alert alert-warning">
+                    <strong>Important:</strong> Critical information or warnings.
+                </div>
+
+                <!-- Lists -->
+                <ul>
+                    <li>Unordered list item 1</li>
+                    <li>Unordered list item 2</li>
+                    <li>Unordered list item 3</li>
+                </ul>
+
+                <ol>
+                    <li>Ordered list item 1</li>
+                    <li>Ordered list item 2</li>
+                    <li>Ordered list item 3</li>
+                </ol>
+
+                <!-- Call to Action Button -->
+                <a href="next-page.html" class="btn">Next: Page Name →</a>
+                <!-- YOUR CONTENT ENDS HERE -->
+            </div>
+        </main>
+    </div>
+
+    <!-- UPDATE THE PATH: ../../script.js or ../../../script.js -->
+    <script src="../../script.js"></script>
+</body>
+</html>

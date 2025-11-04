@@ -1,0 +1,28 @@
+{
+  "name": "hivepro-docs",
+  "version": "1.0.0",
+  "description": "HivePro Documentation Site",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx http-server dist -p 8080",
+    "watch": "nodemon --watch docs-src --ext md --exec npm run build"
+  },
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-attrs": "^4.1.6",
+    "fs-extra": "^11.2.0",
+    "gray-matter": "^4.0.3",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "documentation",
+    "hivepro"
+  ],
+  "author": "HivePro Team",
+  "license": "MIT"
+}
