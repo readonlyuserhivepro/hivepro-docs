@@ -4,7 +4,7 @@ build/
 
 # Dependencies
 node_modules/
-package-lock.json
+# package-lock.json is needed for GitHub Actions
 
 # Editor directories and files
 .vscode/
